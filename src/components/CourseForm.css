@@ -1,0 +1,67 @@
+.course-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: 'Inter', sans-serif;
+}
+.cf-row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.cf-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-width: 180px;
+}
+.cf-field--sm { flex: 0 0 120px; min-width: 100px; }
+.cf-field label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.5);
+}
+.cf-field input {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 11px 14px;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+}
+.cf-field input::placeholder { color: rgba(255,255,255,0.2); }
+.cf-field input:focus {
+  border-color: rgba(108,71,255,0.6);
+  background: rgba(108,71,255,0.08);
+  box-shadow: 0 0 0 3px rgba(108,71,255,0.15);
+}
+.cf-actions {
+  display: flex;
+  gap: 10px;
+}
+.cf-btn {
+  padding: 11px 24px;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.15s;
+}
+.cf-btn:hover { opacity: 0.88; transform: translateY(-1px); }
+.cf-btn:active { transform: translateY(0); }
+.cf-btn--primary {
+  background: linear-gradient(135deg, #6c47ff, #00c2ff);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(108,71,255,0.3);
+}
+.cf-btn--cancel {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.6);
+}

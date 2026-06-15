@@ -1,0 +1,71 @@
+.course-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  font-family: 'Inter', sans-serif;
+}
+.course-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.4);
+  border-color: rgba(255,255,255,0.14);
+}
+.course-card-accent {
+  height: 4px;
+  width: 100%;
+}
+.course-card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.course-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.4;
+}
+.course-card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.course-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.45);
+}
+.course-card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255,255,255,0.07);
+}
+.card-btn {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.15s;
+}
+.card-btn:hover { opacity: 0.85; transform: translateY(-1px); }
+.card-btn:active { transform: translateY(0); }
+.card-btn--edit {
+  background: rgba(108,71,255,0.2);
+  color: #a07aff;
+  border: 1px solid rgba(108,71,255,0.3);
+}
+.card-btn--delete {
+  background: rgba(255,80,80,0.12);
+  color: #ff8080;
+  border: 1px solid rgba(255,80,80,0.25);
+}
